@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Dwell Time, a transit podcast</title>
+    <description></description>
+    <link>http://dwelltime.ca//</link>
+    <atom:link href="http://dwelltime.ca//feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Sat, 17 Jan 2026 12:35:25 -0800</pubDate>
+    <lastBuildDate>Sat, 17 Jan 2026 12:35:25 -0800</lastBuildDate>
+    <generator>Jekyll v3.10.0</generator>
+    
+  </channel>
+</rss>
