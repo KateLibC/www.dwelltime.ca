@@ -59,7 +59,7 @@
     const items = data.querySelectorAll("item");
     let html = ``;
     items.forEach(el => {
-      var description = el.querySelector("description").innerHTML.split("</p>")[0].replace(/<[^>]*>?/gm, '');
+      var description = el.querySelector("description").innerHTML.split("---")[0].replaceAll("</p><p>", "\n").replace(/<[^>]*>?/gm, '').replaceAll("\r", "").replaceAll("\n", "<br /><br />");
       var date = new Date(el.querySelector("pubDate").innerHTML.replace(/<[^>]*>?/gm, ''));
       var yearStr = date.getFullYear();
       const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
@@ -118,8 +118,9 @@
   </h3>
 
   <p>
-    <a href="https://podcasts.apple.com/ca/podcast/dwell-time-a-transit-podcast/id1866768494" target="_blank" class="btn btn-primary"><i class="fa-brands fa-bluesky"></i></a>
-    <a href="https://podcasts.apple.com/ca/podcast/dwell-time-a-transit-podcast/id1866768494" target="_blank" class="btn btn-primary"><i class="fa-brands fa-square-instagram"></i></a>
+    <a href="bsky.app/profile/dwelltime.ca" target="_blank" class="btn btn-primary"><i class="fa-brands fa-bluesky"></i></a>
+    <a href="https://www.instagram.com/dwelltimepod/" target="_blank" class="btn btn-primary"><i class="fa-brands fa-square-instagram"></i></a>
+    <a href="mailto:mailbag@dwelltime.ca" target="_blank" class="btn btn-primary"><i class="fa-solid fa-envelope"></i></a>
   </p>
 </div>
           </div>
